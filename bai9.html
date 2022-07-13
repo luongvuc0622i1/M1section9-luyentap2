@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập vào độ dài của cạnh thứ nhất của tam giác:");
+    let b = +prompt("Nhập vào độ dài của cạnh thứ hai của tam giác:");
+    let c = +prompt("Nhập vào độ dài của cạnh thứ ba của tam giác:");
+    if (a>0 && b>0 && c>0 && (a+b)>c && (b+c)>a && (c+a)>b) {
+        alert("Đây là độ dài 3 cạnh của 1 tam giác");
+    } else {
+        alert("Đây không phải là độ dài 3 cạnh của 1 tam giác");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài 6</title>
+</head>
+<body>
+<script>
+  let a = +prompt("Nhập a trong biểu thức ax^2 + bx + c = 0", 'a');
+  let b = +prompt("Nhập b trong biểu thức ax^2 + bx + c = 0", 'b');
+  let c = +prompt("Nhập c trong biểu thức ax^2 + bx + c = 0", 'c');
+  if (a == 0) {
+    alert("Đây không phải là phương trình bậc 2, hãy tìm cách giải của phương trình bậc 1!");
+  } else {
+    let denta = b * b - 4 * a * c;
+    if (denta < 0) {
+      alert("Phương trình bậc 2 vô nghiệm!");
+    } else if (denta == 0) {
+      alert("Phương trình bậc 2 có nghiệm kép: x1 = x2 = " + (- b / (2*a)) );
+    } else {
+      let x1 = (-b + Math.sqrt(denta)) / (2 * a);
+      let x2 = (-b - Math.sqrt(denta)) / (2 * a);
+      alert("Phương trình bậc 2 có 2 nghiệm phân biệt: x1 = " + x1 + " và x2 = " + x2);
+    }
+  }
+</script>
+</body>
+</html>
